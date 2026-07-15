@@ -97,6 +97,11 @@ a:hover{
     color: var(--accent-dark);
 }
 
+.container > a{
+    display: block;
+    text-align: center;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
