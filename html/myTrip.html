@@ -7,55 +7,57 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>나의 여행지 소개</h1>
-    <figure>
-        <audio controls>
-            <source src="../media/trip-audio.mp3" type="audio/mpeg">
-            오디오를 재생할 수 없습니다.
-        </audio>
-        <figcaption>여행지에서 듣기 좋은 음악</figcaption>
-    </figure>
-    <hr>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1770348712485-01d1ef4f62bf?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="설산 여행 사진">
-        <figcaption>Alberta, Canada (2026.02.06)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1718976707927-4a9c933d9557?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="들판 여행 사진">
-        <figcaption>Montenegro (2024.06.21)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1731624674372-4506b29fcab0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="호수 여행 사진">
-        <figcaption>Russian River, California, USA (2024.11.15)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1676359912889-434f6a359607?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 4">
-        <figcaption>Lac de Bethmale, Bethmale, France (2023.02.14)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1783159649878-f39b8e4f84bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 5">
-        <figcaption>Drei Zinnen, Italien (2026.07.01)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1783685156798-9e20f03ac35d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 6">
-        <figcaption>Abu Dhabi - United Arab Emirates (2026.07.09)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1783586879543-3378ba2eede0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 7">
-        <figcaption>Gosauseen, Österreich (2026.07.08)</figcaption>
-    </figure>
-    <figure>
-        <img width="400" height="200" src="https://images.unsplash.com/photo-1783591176375-e0a6e3f69071?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 8">
-        <figcaption>Valensole Lavender field, Valensole, France (2026.07.08)</figcaption>
-    </figure>
-    <hr>
-    <h2>나의 여행 브이로그</h2>
-    <figure>
-        <video width="400" height="225" controls poster="../media/trip-photo.svg">
-            <source src="../media/trip-video.mp4" type="video/mp4">
-            비디오를 재생할 수 없습니다.
-        </video>
-        <figcaption>여행지에서 남긴 브이로그</figcaption>
-    </figure>
+    <div class="container">
+        <h1>나의 여행지 소개</h1>
+        <figure>
+            <audio controls>
+                <source src="../media/trip-audio.mp3" type="audio/mpeg">
+                오디오를 재생할 수 없습니다.
+            </audio>
+            <figcaption>여행지에서 듣기 좋은 음악</figcaption>
+        </figure>
+        <hr>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1770348712485-01d1ef4f62bf?q=80&w=685&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="설산 여행 사진"><br>
+            <strong>Alberta, Canada (2026.02.06)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1718976707927-4a9c933d9557?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="들판 여행 사진"><br>
+            <strong>Montenegro (2024.06.21)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1731624674372-4506b29fcab0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="호수 여행 사진"><br>
+            <strong>Russian River, California, USA (2024.11.15)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1676359912889-434f6a359607?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 4"><br>
+            <strong>Lac de Bethmale, Bethmale, France (2023.02.14)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1783159649878-f39b8e4f84bb?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 5"><br>
+            <strong>Drei Zinnen, Italien (2026.07.01)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1783685156798-9e20f03ac35d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 6"><br>
+            <strong>Abu Dhabi - United Arab Emirates (2026.07.09)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1783586879543-3378ba2eede0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 7"><br>
+            <strong>Gosauseen, Österreich (2026.07.08)</strong>
+        </p>
+        <p class="trip-card">
+            <img width="400" height="200" src="https://images.unsplash.com/photo-1783591176375-e0a6e3f69071?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="여행 사진 8"><br>
+            <strong>Valensole Lavender field, Valensole, France (2026.07.08)</strong>
+        </p>
+        <hr>
+        <h2>나의 여행 브이로그</h2>
+        <figure>
+            <video width="400" height="225" controls poster="../media/trip-photo.svg">
+                <source src="../media/trip-video.mp4" type="video/mp4">
+                비디오를 재생할 수 없습니다.
+            </video>
+            <figcaption>여행지에서 남긴 브이로그</figcaption>
+        </figure>
+    </div>
 </body>
 </html>
