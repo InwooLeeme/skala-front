@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fafafa;
+    color: #18181b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 32px;
+}
+
+h1{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    color: #18181b;
+    font-size: 28px;
+    padding: 24px 28px;
+}
+
+h2{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #4f46e5;
+    color: #18181b;
+    font-size: 21px;
+    margin-top: 40px;
+    padding: 0 0 8px;
+}
+
+h3{
+    color: #18181b;
+    font-size: 17px;
+    margin-top: 28px;
+}
+
+p{
+    color: #3f3f46;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 28px 0;
+}
+
+a{
+    color: #4f46e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* 카드형 fieldset (index 메뉴, signUp 섹션) */
+fieldset{
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 24px 28px;
+}
+
+legend{
+    background-color: #4f46e5;
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 16px;
+}
+
+/* 표 (index 바로가기 메뉴, myClass 시간표) */
+table{
+    border-collapse: collapse;
+    border: 1px solid #e5e7eb !important;
+    display: block;
+    margin: 16px 0;
+    overflow-x: auto;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid #e5e7eb !important;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+thead th{
+    background-color: #18181b;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f4f4f5;
+}
+
+tbody tr:hover{
+    background-color: #eef2ff;
+}
+
+/* 목록 */
+ul, ol{
+    color: #3f3f46;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+blockquote{
+    background-color: #eef2ff;
+    border-left: 4px solid #4f46e5;
+    color: #3730a3;
+    font-style: italic;
+    margin: 16px 0;
+    padding: 14px 20px;
+}
+
+dl{
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 8px 24px;
+}
+
+dt{
+    color: #18181b;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+dd{
+    color: #3f3f46;
+    margin: 4px 0 0;
+}
+
+details{
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+summary{
+    color: #4f46e5;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* 폼 (signUp) */
+form label{
+    color: #18181b;
+    display: inline-block;
+    font-weight: 600;
+    min-width: 110px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    background-color: #ffffff;
+    border: 1px solid #d4d4d8;
+    border-radius: 8px;
+    color: #18181b;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus{
+    border-color: #4f46e5;
+    outline: 2px solid #c7d2fe;
+    outline-offset: 1px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    accent-color: #4f46e5;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 22px;
+}
+
+input[type="submit"]{
+    background-color: #4f46e5;
+    border: 1px solid #4f46e5;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover{
+    background-color: #4338ca;
+}
+
+input[type="reset"]{
+    background-color: #ffffff;
+    border: 1px solid #d4d4d8;
+    color: #3f3f46;
+}
+
+input[type="reset"]:hover{
+    background-color: #f4f4f5;
+}
+
+/* 갤러리 (myTrip) */
+figure{
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin: 8px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+figure img,
+figure video{
+    border-radius: 8px;
+    display: block;
+    max-width: 100%;
+}
+
+figcaption{
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+footer p{
+    color: #a1a1aa;
+    font-size: 13px;
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 16px;
+    }
+
+    form label{
+        display: block;
+        margin-bottom: 4px;
+    }
+}
