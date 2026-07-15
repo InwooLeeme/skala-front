@@ -14,11 +14,11 @@
             <legend>계정 정보</legend>
             <p>
                 <label for="user-id">아이디:</label>
-                <input type="text" id="user-id" name="userId" placeholder="4~15자 영문/숫자" required> (필수)
+                <input type="text" id="user-id" name="userId" placeholder="4~15자 영문/숫자" minlength="4" maxlength="15" pattern="[A-Za-z0-9]+" required> (필수)
             </p>
             <p>
                 <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" placeholder="8자 이상 입력" required> (필수)
+                <input type="password" id="password" name="password" placeholder="8자 이상 입력" minlength="8" required> (필수)
             </p>
             <p>
                 <label for="email-id">이메일:</label>
