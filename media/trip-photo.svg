@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+    <title id="title">여행 브이로그 포스터</title>
+    <desc id="desc">산과 해가 있는 여행 영상 포스터 이미지</desc>
+    <rect width="800" height="450" fill="#faf5ea"/>
+    <rect x="36" y="36" width="728" height="378" rx="8" fill="#fffdf8" stroke="#ddcdae" stroke-width="4"/>
+    <path d="M36 292 L196 166 L326 272 L426 194 L764 292 L764 414 L36 414 Z" fill="#7c8f6e"/>
+    <path d="M36 322 L226 202 L386 322 L514 230 L764 326 L764 414 L36 414 Z" fill="#5f6f53"/>
+    <circle cx="614" cy="126" r="48" fill="#d8a08c"/>
+    <circle cx="400" cy="225" r="58" fill="rgba(74,55,40,0.72)"/>
+    <path d="M384 188 L384 262 L444 225 Z" fill="#fffdf8"/>
+    <text x="400" y="358" fill="#4a3728" font-family="Georgia, serif" font-size="32" text-anchor="middle">Travel Vlog</text>
+</svg>
