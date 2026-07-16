@@ -1,5 +1,5 @@
 function startUpDownGame() {
-    const computerNum = Math.floor((Math.random() * 50) + 1);
+    var computerNum = Math.floor(Math.random() * 50) + 1;
     let cnt = 0;
 
     while (true) {
