@@ -8,6 +8,8 @@ selectCity.addEventListener("change", function() {
     renderWeather(selectedCity);
 });
 
+renderWeather(selectCity.value);
+
 async function renderWeather(city) {
     weatherBox.innerHTML = `<p class="weather-loading">로딩 중... ⏳</p>`;
 

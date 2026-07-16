@@ -95,6 +95,10 @@ h1{
     text-align: center;
 }
 
+header{
+    text-align: center;
+}
+
 header h1{
     animation: fadeInDown 0.9s ease both;
 }
@@ -785,6 +789,10 @@ figcaption{
     font-family: "Gaegu", cursive;
     font-size: 14px;
     margin-top: 8px;
+    text-align: center;
+}
+
+footer{
     text-align: center;
 }
 
