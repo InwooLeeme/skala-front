@@ -611,6 +611,16 @@ input[type="reset"]:hover{
     margin-bottom: 10px;
 }
 
+.mini-game-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mini-game-panel h3{
+    margin-bottom: 0;
+}
+
 .action-panel button{
     background-color: var(--accent);
     border: 3px double var(--card-bg);
@@ -622,9 +632,9 @@ input[type="reset"]:hover{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-top: 4px;
+    margin-top: 0;
     padding: 12px 28px;
-    transform: rotate(-1.5deg);
+    transform: none;
     transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
