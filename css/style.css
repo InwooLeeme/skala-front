@@ -492,6 +492,10 @@ footer p{
         align-items: stretch;
     }
 
+    .weather-coordinates{
+        grid-template-columns: 1fr;
+    }
+
     input[type="submit"],
     input[type="reset"]{
         width: 100%;
