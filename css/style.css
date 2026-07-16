@@ -311,6 +311,64 @@ select{
     cursor: pointer;
 }
 
+.weather-panel{
+    border-top: 2px dashed var(--paper-line);
+    margin-top: 20px;
+    padding-top: 6px;
+}
+
+.weather-panel label{
+    color: var(--accent-dark);
+    display: block;
+    font-family: "Gaegu", cursive;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.weather-panel select{
+    max-width: 260px;
+}
+
+.weather-coordinates{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 16px;
+    max-width: 620px;
+}
+
+.weather-coordinates p{
+    background-color: #f8efe0;
+    border: 1px solid var(--paper-line);
+    border-left: 4px solid var(--sage);
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(var(--ink-rgb), 0.08);
+    margin: 0;
+    padding: 10px 12px;
+}
+
+.weather-coordinates strong{
+    color: var(--accent-dark);
+    display: block;
+    font-family: "Gaegu", cursive;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.weather-coordinates span{
+    color: var(--ink);
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 2px;
+    word-break: break-word;
+}
+
+.weather-loading{
+    grid-column: 1 / -1;
+}
+
 .email-row{
     align-items: center;
     display: flex;
