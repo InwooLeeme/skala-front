@@ -28,10 +28,6 @@ body{
     padding: 32px;
 }
 
-a{
-    text-decoration-line: none;
-}
-
 .container{
     background-image:
         linear-gradient(var(--margin-line) 2px, transparent 2px),
@@ -147,10 +143,7 @@ hr{
 a{
     color: var(--accent);
     font-weight: 700;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: var(--margin-line);
-    text-underline-offset: 3px;
+    text-decoration: none;
     transition: color 0.25s ease;
 }
 
@@ -685,6 +678,12 @@ figure video{
     border-radius: 2px;
     display: block;
     max-width: 100%;
+}
+
+.container:has(.trip-card) > figure{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .trip-card{
