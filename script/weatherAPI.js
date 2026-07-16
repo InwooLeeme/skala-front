@@ -14,6 +14,5 @@ export async function getGeolocation(city) {
 export async function getWeather(latitude, longitude) {
     const weatherResult = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,cloud_cover`);
     const weatherData = await weatherResult.json();
-    console.log(weatherData);
     return weatherData.current;
 }

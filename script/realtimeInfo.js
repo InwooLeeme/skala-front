@@ -14,7 +14,6 @@ async function renderWeather(city) {
     try{
         const {latitude, longitude} = await getGeolocation(city);
         const {temperature_2m, relative_humidity_2m, cloud_cover} = await getWeather(latitude, longitude);
-        console.log(temperature_2m, relative_humidity_2m, cloud_cover);
 
         weatherBox.innerHTML = `
             <p><strong>도시</strong><span>${city}</span></p>
