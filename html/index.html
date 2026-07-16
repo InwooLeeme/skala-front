@@ -119,6 +119,20 @@
                         </li>
                     </ul>
                 </details>
+                <section class="weather-panel">
+                    <h3>실시간 세계 날씨</h3>
+                    <label for="city">도시 선택</label>
+                    <select id="city">
+                        <option value="New York">뉴욕</option>
+                        <option value="Seoul">서울</option>
+                        <option value="Kathmandu">네팔</option>
+                        <option value="Tokyo">도쿄</option>
+                        <option value="Paris">파리</option>
+                    </select>
+                    <div id="weather-box" class="weather-coordinates">
+                        도시를 선택하면 좌표가 표시됩니다.
+                    </div>
+                </section>
                 <section>
                     <h3>🎮 미니 게임</h3>
                     <button type="button" onclick="startUpDownGame()">업다운 게임 🚀</button>
@@ -144,5 +158,6 @@
     <script src="../script/upDown.js"></script>
     <script src="../script/grade.js"></script>
     <script src="../script/bag.js"></script>
+    <script src="../script//weather.js"></script>
 </body>
 </html>
