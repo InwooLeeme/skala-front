@@ -285,23 +285,18 @@ table:has([rowspan]) tbody td:hover{
     background-color: #f0e0c4;
 }
 
-nav table{
+nav .shortcut-list{
     background-color: transparent;
-    border: none !important;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    list-style: none;
     margin: 4px 0 0;
-    table-layout: auto;
+    padding: 0;
     width: 100%;
 }
 
-nav table thead,
-nav table tbody{
-    display: contents;
-}
-
-nav table tr{
+nav .shortcut-list li{
     background-color: var(--card-bg);
     border: 1px solid var(--paper-line);
     border-radius: 4px;
@@ -311,21 +306,13 @@ nav table tr{
     flex: 1 1 190px;
     flex-direction: column;
     gap: 4px;
+    margin-bottom: 0;
     padding: 14px 16px;
     position: relative;
     transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-nav table tr:nth-child(even){
-    background-color: var(--card-bg);
-}
-
-/* 카드가 구분/페이지/설명을 모두 담으므로 중복되는 헤더 행은 숨김 */
-nav table tr:first-child{
-    display: none;
-}
-
-nav table tr:hover{
+nav .shortcut-list li:hover{
     background-color: #f0e0c4;
     box-shadow: 0 10px 20px rgba(var(--ink-rgb), 0.18);
     transform: translateY(-3px);
@@ -333,43 +320,35 @@ nav table tr:hover{
 
 /* 키보드 탐색 시에만 표시. 바깥에 뜨는 아웃라인(이중 테두리) 대신
    카드 테두리에 통합된 inset 링으로 자연스럽게 강조 */
-nav table tr:has(:focus-visible){
+nav .shortcut-list li:has(:focus-visible){
     border-color: var(--accent);
     box-shadow: inset 0 0 0 2px var(--accent), 0 2px 6px rgba(var(--ink-rgb), 0.1);
     outline: none;
 }
 
-nav th,
-nav td{
-    background-color: transparent;
-    border: none !important;
-    padding: 0;
-    text-align: left;
-}
-
-nav table td:first-child{
+nav .shortcut-category{
     color: var(--accent);
     font-family: "Gaegu", cursive;
     font-size: 13px;
     font-weight: 700;
 }
 
-nav table td:nth-child(2) a{
+nav .shortcut-list a{
     font-family: "Gaegu", cursive;
     font-size: 18px;
 }
 
-nav table td:nth-child(2) a::after{
+nav .shortcut-list a::after{
     content: "";
     inset: 0;
     position: absolute;
 }
 
-nav table td:nth-child(2) a:focus-visible{
+nav .shortcut-list a:focus-visible{
     outline: none;
 }
 
-nav table td:last-child{
+nav .shortcut-desc{
     color: var(--ink-soft);
     font-size: 14px;
 }
@@ -811,7 +790,7 @@ footer p{
         grid-column: 1;
     }
 
-    nav table{
+    nav .shortcut-list{
         flex-direction: column;
     }
 
