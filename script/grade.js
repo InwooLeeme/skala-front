@@ -18,5 +18,14 @@ function calculateGrade(){
 
     const avg = totalScore / 3;
     const studentResult = (avg >= 60);
-    alert(`총점 : ${totalScore}점, 평균 : ${avg}, 결과 : ${studentResult ? "" : "불"}합격입니다!`);
+    const grade = getGrade(avg);
+    alert(`총점 : ${totalScore}점, 평균 : ${avg}, 등급 : ${grade}, 결과 : ${studentResult ? "" : "불"}합격입니다!`);
+}
+
+function getGrade(avg){
+    if(avg >= 90) return "A";
+    if(avg >= 80) return "B";
+    if(avg >= 70) return "C";
+    if(avg >= 60) return "D";
+    return "F";
 }
